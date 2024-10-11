@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+    <div class="c">
+        <h1>Product Reviews</h1>
+        <div class="c1">
+          <input type="text" id="reviewText" placeholder="Write your review..." />
+          <select id="reviewRating">
+            <option value="5">★★★★★</option>
+            <option value="4">★★★★</option>
+            <option value="3">★★★</option>
+            <option value="2">★★</option>
+            <option value="1">★</option>
+          </select>
+          <button onclick="addReview()">Submit Review</button>
+        </div>
+        <h2>Average Rating: <span id="averageRating">0</span>/5</h2>
+        <ul id="reviewList"></ul>
+      </div>
+    <script src="reviews.js"></script>
+</body>
+</html>
